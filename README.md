@@ -5,8 +5,8 @@ Playable Godot 4 Web prototype (prologue + five chapters). Full docs: [`twin-kin
 ## Play in the browser (GitHub Pages)
 
 **[Open the game](https://swatipriyadarshini9.github.io/Genome-Of-The-Twin-King/twin-kings-preview/)**
-
-Use that full URL (not the repo root). First load is ~50 MB.
+**Or**
+**https://swatipriyadarshini9.itch.io/genome-of-the-twin-kings**
 
 ## Local play
 

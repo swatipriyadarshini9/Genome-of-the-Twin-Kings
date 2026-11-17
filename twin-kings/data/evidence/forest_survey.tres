@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EvidenceEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/evidence_entry.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "forest_survey"
+title = "The forest survey"
+source = "Sequence Forest · the sprite's field archive"
+observation = "Three aligned examples show a substitution, an insertion and a deletion relative to their references."
+limitation = "These are simplified teaching alignments. Confirm a real variant using read quality, context and independent evidence."
+xp = 100

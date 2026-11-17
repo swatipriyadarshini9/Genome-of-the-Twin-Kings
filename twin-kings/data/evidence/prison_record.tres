@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EvidenceEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/evidence_entry.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "prison_record"
+title = "The prison record"
+source = "Dungeon of False Annotations · ancient terminal"
+observation = "Two aligned bases differ from the reference: position 6 A → T and position 12 C → T."
+limitation = "A mismatch can be a true variant or an error. These differences alone do not establish identity or tampering."
+xp = 50

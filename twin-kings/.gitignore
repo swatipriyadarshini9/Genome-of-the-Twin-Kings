@@ -1,0 +1,6 @@
+# Godot's generated editor and import cache
+.godot/
+# Local exports and platform-specific temporary files
+exported/
+*.tmp
+.DS_Store

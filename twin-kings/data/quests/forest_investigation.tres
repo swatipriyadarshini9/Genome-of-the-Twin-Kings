@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/quest_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://data/evidence/forest_survey.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "forest_investigation"
+title = "The sprite's scattered survey"
+region = "forest"
+completion_flag = "forest_puzzle_solved"
+evidence = ExtResource("2")

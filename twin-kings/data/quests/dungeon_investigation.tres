@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/quest_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://data/evidence/prison_record.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "dungeon_investigation"
+title = "The records don't agree"
+region = "dungeon"
+completion_flag = "puzzle_solved"
+evidence = ExtResource("2")

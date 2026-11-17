@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EvidenceEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/evidence_entry.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "missing_ledger"
+title = "The dragon's ledger"
+source = "Dungeon of Missing Data · the dragon's ledger"
+observation = "At site 112, two of four passing reads support G against reference A. Site 143 has too little passing coverage for a call."
+limitation = "Toy thresholds and sparse reads; mapping, duplicate and strand checks are absent. Validate the candidate independently."
+xp = 250

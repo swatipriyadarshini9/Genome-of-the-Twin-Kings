@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EvidenceEntry" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/evidence_entry.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "final_case"
+title = "The council case"
+source = "Hall of Records · archived record, repeat and public summary"
+observation = "The archived record and repeat differ from the reference at positions 6 and 12; the public summary says none."
+limitation = "A reread of the same aliquot can share source or labeling errors. Short profiles cannot identify twins; audit custody independently."
+xp = 300

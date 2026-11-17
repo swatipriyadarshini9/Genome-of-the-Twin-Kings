@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="PileupTrial" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/pileup_trial.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/pileup_site.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/resources/pileup_support_choice.gd" id="3"]
+
+[sub_resource type="Resource" id="Site112"]
+script = ExtResource("2")
+position = 112
+reference = "A"
+bases = PackedStringArray("A", "A", "G", "G", "G")
+qualities = PackedInt32Array(36, 34, 35, 32, 12)
+
+[sub_resource type="Resource" id="Site127"]
+script = ExtResource("2")
+position = 127
+reference = "C"
+bases = PackedStringArray("C", "C", "C", "C", "T")
+qualities = PackedInt32Array(38, 35, 31, 33, 8)
+
+[sub_resource type="Resource" id="Site143"]
+script = ExtResource("2")
+position = 143
+reference = "T"
+bases = PackedStringArray("T", "T", "C")
+qualities = PackedInt32Array(36, 18, 12)
+
+[sub_resource type="Resource" id="ChoiceCorrect"]
+script = ExtResource("3")
+alt_base = "G"
+alt_count = 2
+depth = 4
+
+[sub_resource type="Resource" id="ChoiceRaw"]
+script = ExtResource("3")
+alt_base = "G"
+alt_count = 3
+depth = 5
+
+[sub_resource type="Resource" id="ChoiceReference"]
+script = ExtResource("3")
+alt_base = "A"
+alt_count = 2
+depth = 4
+
+[resource]
+script = ExtResource("1")
+id = "missing_pileup_trial"
+title = "The dragon's ledger"
+min_quality = 30
+min_depth = 4
+min_alt = 2
+sites = Array[Resource]([SubResource("Site112"), SubResource("Site127"), SubResource("Site143")])
+support_choices = Array[Resource]([SubResource("ChoiceCorrect"), SubResource("ChoiceRaw"), SubResource("ChoiceReference")])

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="ExpressionTrial" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/expression_trial.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/expression_sample.gd" id="2"]
+
+[sub_resource type="Resource" id="SampleA"]
+script = ExtResource("2")
+id = "A"
+condition = "control"
+batch = "I"
+qc_pass = true
+qc_note = "PASS"
+mapped_reads = 2000000
+target_count = 60
+
+[sub_resource type="Resource" id="SampleB"]
+script = ExtResource("2")
+id = "B"
+condition = "case"
+batch = "I"
+qc_pass = true
+qc_note = "PASS"
+mapped_reads = 4000000
+target_count = 120
+
+[sub_resource type="Resource" id="SampleC"]
+script = ExtResource("2")
+id = "C"
+condition = "case"
+batch = "I"
+qc_pass = false
+qc_note = "FAIL / LOW QUALITY"
+mapped_reads = 4000000
+target_count = 240
+
+[sub_resource type="Resource" id="SampleD"]
+script = ExtResource("2")
+id = "D"
+condition = "case"
+batch = "II"
+qc_pass = true
+qc_note = "PASS"
+mapped_reads = 4000000
+target_count = 240
+
+[resource]
+script = ExtResource("1")
+id = "swamp_expression_trial"
+title = "The marsh assay"
+samples = Array[Resource]([SubResource("SampleA"), SubResource("SampleB"), SubResource("SampleC"), SubResource("SampleD")])
+options = Array[Vector2]([Vector2(30, 30), Vector2(60, 120), Vector2(30, 60)])

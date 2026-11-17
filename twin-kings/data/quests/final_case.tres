@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestDefinition" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/quest_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://data/evidence/final_case.tres" id="2"]
+
+[resource]
+script = ExtResource("1")
+id = "final_case"
+title = "The council case"
+region = "final"
+completion_flag = "final_case_prepared"
+evidence = ExtResource("2")

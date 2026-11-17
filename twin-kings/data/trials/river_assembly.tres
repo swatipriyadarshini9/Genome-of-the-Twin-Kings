@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AssemblyTrial" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/assembly_trial.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "river_read_assembly"
+title = "The broken river ledger"
+reads = PackedStringArray("TTAGCT", "ATGCCG", "GCTAAC", "CCGTTA")
+min_overlap = 3

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="VariantTrial" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/variant_trial.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/variant_case.gd" id="2"]
+
+[sub_resource type="Resource" id="CaseOne"]
+script = ExtResource("2")
+id = "case_01"
+label = "OBSERVATION 01"
+reference = "ATCGTA"
+sample = "ATCGAA"
+
+[sub_resource type="Resource" id="CaseTwo"]
+script = ExtResource("2")
+id = "case_02"
+label = "OBSERVATION 02"
+reference = "ATCG-A"
+sample = "ATCGTA"
+
+[sub_resource type="Resource" id="CaseThree"]
+script = ExtResource("2")
+id = "case_03"
+label = "OBSERVATION 03"
+reference = "ACGTCA"
+sample = "AC-TCA"
+
+[resource]
+script = ExtResource("1")
+id = "forest_variant_trial"
+title = "The sprite's scattered survey"
+cases = Array[Resource]([SubResource("CaseOne"), SubResource("CaseTwo"), SubResource("CaseThree")])
